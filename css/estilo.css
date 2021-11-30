@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #FFF7AE;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #297F87;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: #FFF7AE;
+  }
+  
+  /* Container for flexboxes */
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #DF2E2E;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Style the content */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #FFF7AE;
+    padding: 10px;
+  }
+
+  table {
+    border-collapse: collapse;
+    border: 1px solid  #297F87;
+    width: 100%;
+  }
+
+  th {
+    text-align: center;
+    background-color:  #DF2E2E;
+    color: #FFF7AE;
+    padding: 15px;
+    border: 1px solid  #297F87;
+  }
+
+  tr {
+    text-align: center;
+    color:  #297F87;
+    padding:  15px;
+    border: 1px solid #297F87;
+  }
+
+  td {
+    height: 50px;
+    vertical-align: center;
+    padding: 15px;
+    border: 1px solid  #297F87;
+  }
+
+  tr:hover {background-color: #F6D167}
+
+
+  /* Style the footer */
+  footer {
+    background-color: #297F87;
+    padding: 50px;
+    text-align: center;
+    font-size: 15px;
+    color: #FFF7AE;
+  }
+
+
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+  
+  
+  ul#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 0;
+  }
+  
+  ul#menu li a {
+    display: block;
+    color: #FFF7AE;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+
+  ul#menu li a:hover:not(.active) {
+    background-color: #F6D167;
+    color:#DF2E2E;
+ 
+  }
+  
+  input[type=text], input[type=date], input[type=password], input[type=email], select, textarea {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #297F87;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #297F87;
+    
+  }
+  
+  input[type=submit] {
+    font-weight: 700;
+    width: 100%;
+    background-color: #297F87;
+    color: #FFF7AE;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type=submit]:hover {
+    background-color:#DF2E2E;
+  }
+
+  label {
+    font-weight: 600;
+    color:  #297F87;
+  }
+
+  #cadastrar{
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: none;
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #297F87;
+    color: #FFF7AE;
+    text-align: center;
+  }
+
+  #cadastrar:hover {
+    background-color:#DF2E2E;
+    border: none;
+  }
+  
+
+/* 
+
+tag:  nao precisa por nada na frente se eu só for me referir as tags que ja existem
+.class: coloca ponto na frente quando for class
+#id: coloca # quando for um id
+
+
+- coloco o id quando quiser personalizar de um jeito único um item (nao pode repetir!)
+- coloco uma class quando vou aplicar a mesma formatacao a mais de um elemento 
+(duvida: precisa ser do mesmo tipo de tag??
+
+*/
